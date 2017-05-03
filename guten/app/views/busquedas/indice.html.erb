@@ -1,0 +1,11 @@
+<h1>Biblioteca Gutenberg</h1>
+<br>
+<%= form_tag("/", method: 'post') do %>
+  <%= text_field_tag(:busque) %>
+  <%= submit_tag("Buscar") %>
+<% end %>
+
+
+<% @documentos.each do |documento| %>
+  <h3><%= documento.word %>		<%= documento.numero %>		 <%= documento.nameFile %><h3>
+<% end %>

@@ -1,0 +1,920 @@
+Started GET "/" for 10.131.137.254 at 2017-05-02 03:02:40 -0400
+Cannot render console from 10.131.137.254! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BusquedasController#indice as HTML
+  Rendering busquedas/indice.html.erb within layouts/application
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | Server 10.131.137.188:27017 initializing.
+MONGODB | Topology type 'unknown' changed to type 'single'.
+MONGODB | Server description for 10.131.137.188:27017 changed from 'unknown' to 'standalone'.
+MONGODB | There was a change in the members of the 'single' topology.
+MONGODB | 10.131.137.188:27017 | grupo_07.find | STARTED | {"find"=>"gutenberg", "filter"=>{}}
+MONGODB | 10.131.137.188:27017 | grupo_07.saslStart | STARTED | {}
+MONGODB | 10.131.137.188:27017 | grupo_07.saslStart | SUCCEEDED | 0.0063786s
+MONGODB | 10.131.137.188:27017 | grupo_07.saslContinue | STARTED | {}
+MONGODB | 10.131.137.188:27017 | grupo_07.saslContinue | SUCCEEDED | 0.0011709309999999998s
+MONGODB | 10.131.137.188:27017 | grupo_07.saslContinue | STARTED | {}
+MONGODB | 10.131.137.188:27017 | grupo_07.saslContinue | SUCCEEDED | 0.0019067219999999998s
+MONGODB | 10.131.137.188:27017 | grupo_07.find | SUCCEEDED | 0.035906776999999994s
+MONGODB | 10.131.137.188:27017 | grupo_07.getMore | STARTED | {"getMore"=>48528001225, "collection"=>"gutenberg"}
+MONGODB | 10.131.137.188:27017 | grupo_07.getMore | SUCCEEDED | 1.819857974s
+MONGODB | 10.131.137.188:27017 | grupo_07.getMore | STARTED | {"getMore"=>48528001225, "collection"=>"gutenberg"}
+MONGODB | 10.131.137.188:27017 | grupo_07.getMore | SUCCEEDED | 2.017907836s
+MONGODB | 10.131.137.188:27017 | grupo_07.getMore | STARTED | {"getMore"=>48528001225, "collection"=>"gutenberg"}
+MONGODB | 10.131.137.188:27017 | grupo_07.getMore | SUCCEEDED | 1.872918913s
+MONGODB | 10.131.137.188:27017 | grupo_07.getMore | STARTED | {"getMore"=>48528001225, "collection"=>"gutenberg"}
+MONGODB | 10.131.137.188:27017 | grupo_07.getMore | SUCCEEDED | 1.563634382s
+MONGODB | 10.131.137.188:27017 | grupo_07.getMore | STARTED | {"getMore"=>48528001225, "collection"=>"gutenberg"}
+MONGODB | 10.131.137.188:27017 | grupo_07.getMore | SUCCEEDED | 1.772928593s
+MONGODB | 10.131.137.188:27017 | grupo_07.getMore | STARTED | {"getMore"=>48528001225, "collection"=>"gutenberg"}
+MONGODB | 10.131.137.188:27017 | grupo_07.getMore | SUCCEEDED | 1.734701568s
+MONGODB | 10.131.137.188:27017 | grupo_07.getMore | STARTED | {"getMore"=>48528001225, "collection"=>"gutenberg"}
+MONGODB | 10.131.137.188:27017 | grupo_07.getMore | SUCCEEDED | 1.0079759069999998s
+  Rendered busquedas/indice.html.erb within layouts/application (46487.5ms)
+Completed 200 OK in 47786ms (Views: 47734.1ms)
+
+
+Started GET "/" for 10.131.137.254 at 2017-05-02 03:10:42 -0400
+Cannot render console from 10.131.137.254! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BusquedasController#indice as HTML
+  Rendering busquedas/indice.html.erb within layouts/application
+  Rendered busquedas/indice.html.erb within layouts/application (7.4ms)
+Completed 500 Internal Server Error in 30ms
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+     6: <% end %>
+     7: 
+     8: 
+     9: <% @documentos.each do |documento| %>
+    10:   <h3><%= documento.word %> <%= documento.numero %> <%= documento.nameFile %><h3>
+    11: <% end %>
+  
+app/views/busquedas/indice.html.erb:9:in `_app_views_busquedas_indice_html_erb___431741044009418215_35632940'
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (8.2ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (26.8ms)
+Started GET "/" for 10.131.137.254 at 2017-05-02 03:14:31 -0400
+Cannot render console from 10.131.137.254! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BusquedasController#indice as HTML
+  Rendering busquedas/indice.html.erb within layouts/application
+  Rendered busquedas/indice.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 223ms (Views: 189.8ms)
+
+
+Started POST "/busquedas/indice" for 10.131.137.254 at 2017-05-02 03:14:37 -0400
+Cannot render console from 10.131.137.254! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [POST] "/busquedas/indice"):
+  
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.0) lib/web_console/middleware.rb:20:in `block in call'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered collection of /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [2 times] (4.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (11.3ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (65.0ms)
+Started POST "/busquedas/indice" for 10.131.137.254 at 2017-05-02 03:22:28 -0400
+Cannot render console from 10.131.137.254! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [POST] "/busquedas/indice"):
+  
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.0) lib/web_console/middleware.rb:20:in `block in call'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.3ms)
+  Rendered collection of /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [3 times] (3.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (11.4ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (33.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (94.7ms)
+Started POST "/busquedas/indice" for 10.131.137.254 at 2017-05-02 03:22:34 -0400
+Cannot render console from 10.131.137.254! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [POST] "/busquedas/indice"):
+  
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.0) lib/web_console/middleware.rb:20:in `block in call'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendered collection of /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [3 times] (3.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.8ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (45.9ms)
+Started POST "/busquedas/indice" for 10.131.137.254 at 2017-05-02 03:24:40 -0400
+Cannot render console from 10.131.137.254! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [POST] "/busquedas/indice"):
+  
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.0) lib/web_console/middleware.rb:20:in `block in call'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered collection of /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [3 times] (2.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.9ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (42.1ms)
+Started GET "/" for 10.131.137.254 at 2017-05-02 03:26:23 -0400
+Cannot render console from 10.131.137.254! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BusquedasController#indice as HTML
+  Rendering busquedas/indice.html.erb within layouts/application
+  Rendered busquedas/indice.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 282ms (Views: 235.6ms)
+
+
+Started POST "/" for 10.131.137.254 at 2017-05-02 03:26:31 -0400
+Cannot render console from 10.131.137.254! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BusquedasController#indice as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"B4L67G3NGIJPpGr5jsMh2blOoYcdLY2DANEbkX+HCwPXZ48OF0mrtppJVeFWVvrb1qxPB7oL0ZHLyYXAtVTEBw==", "term"=>"todos", "commit"=>"Buscar"}
+  Rendering busquedas/indice.html.erb within layouts/application
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | Server 10.131.137.188:27017 initializing.
+MONGODB | Topology type 'unknown' changed to type 'single'.
+MONGODB | Server description for 10.131.137.188:27017 changed from 'unknown' to 'standalone'.
+MONGODB | There was a change in the members of the 'single' topology.
+MONGODB | 10.131.137.188:27017 | grupo_07.find | STARTED | {"find"=>"gutenberg", "filter"=>{"term"=>"todos"}}
+MONGODB | 10.131.137.188:27017 | grupo_07.saslStart | STARTED | {}
+MONGODB | 10.131.137.188:27017 | grupo_07.saslStart | SUCCEEDED | 0.005785142s
+MONGODB | 10.131.137.188:27017 | grupo_07.saslContinue | STARTED | {}
+MONGODB | 10.131.137.188:27017 | grupo_07.saslContinue | SUCCEEDED | 0.0011672330000000002s
+MONGODB | 10.131.137.188:27017 | grupo_07.saslContinue | STARTED | {}
+MONGODB | 10.131.137.188:27017 | grupo_07.saslContinue | SUCCEEDED | 0.00344795s
+MONGODB | 10.131.137.188:27017 | grupo_07.find | SUCCEEDED | 1.346475466s
+  Rendered busquedas/indice.html.erb within layouts/application (1354.9ms)
+Completed 200 OK in 1413ms (Views: 1395.3ms)
+
+
+Started POST "/" for 10.131.137.254 at 2017-05-02 03:26:59 -0400
+Cannot render console from 10.131.137.254! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BusquedasController#indice as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KFacnvvDcX0U22uyREEdcDwownWSfHBx52HygQUGIwH4s+l8gUfCScE2VKqc1MZyU8os9TVaLGMseWzQz9XsBQ==", "term"=>"el", "commit"=>"Buscar"}
+  Rendering busquedas/indice.html.erb within layouts/application
+MONGODB | 10.131.137.188:27017 | grupo_07.find | STARTED | {"find"=>"gutenberg", "filter"=>{"term"=>"el"}}
+MONGODB | 10.131.137.188:27017 | grupo_07.find | SUCCEEDED | 1.415634493s
+  Rendered busquedas/indice.html.erb within layouts/application (1418.1ms)
+Completed 200 OK in 1444ms (Views: 1442.3ms)
+
+
+Started GET "/" for 10.131.137.254 at 2017-05-02 11:44:41 -0400
+Cannot render console from 10.131.137.254! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BusquedasController#indice as HTML
+  Rendering busquedas/indice.html.erb within layouts/application
+  Rendered busquedas/indice.html.erb within layouts/application (13.1ms)
+Completed 200 OK in 733ms (Views: 689.7ms)
+
+
+Started POST "/" for 10.131.137.254 at 2017-05-02 11:44:51 -0400
+Cannot render console from 10.131.137.254! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BusquedasController#indice as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cCme44ZM71P8Z+B/NJ38sDZ6MuGmdm+2y9kFUluhP0qT6h4vqat8rfE1hs6JcjioHP5LsSyJ7JnABDuUMycKmg==", "term"=>"todos", "commit"=>"Buscar"}
+  Rendering busquedas/indice.html.erb within layouts/application
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | Server 10.131.137.188:27017 initializing.
+MONGODB | Topology type 'unknown' changed to type 'single'.
+MONGODB | Server description for 10.131.137.188:27017 changed from 'unknown' to 'standalone'.
+MONGODB | There was a change in the members of the 'single' topology.
+MONGODB | 10.131.137.188:27017 | grupo_07.find | STARTED | {"find"=>"gutenberg", "filter"=>{"term"=>"todos"}}
+MONGODB | 10.131.137.188:27017 | grupo_07.saslStart | STARTED | {}
+MONGODB | 10.131.137.188:27017 | grupo_07.saslStart | SUCCEEDED | 0.006885382s
+MONGODB | 10.131.137.188:27017 | grupo_07.saslContinue | STARTED | {}
+MONGODB | 10.131.137.188:27017 | grupo_07.saslContinue | SUCCEEDED | 0.000734505s
+MONGODB | 10.131.137.188:27017 | grupo_07.saslContinue | STARTED | {}
+MONGODB | 10.131.137.188:27017 | grupo_07.saslContinue | SUCCEEDED | 0.0015201540000000001s
+MONGODB | 10.131.137.188:27017 | grupo_07.find | SUCCEEDED | 1.335184457s
+  Rendered busquedas/indice.html.erb within layouts/application (1348.0ms)
+Completed 200 OK in 1408ms (Views: 1371.5ms)
+
+
+Started POST "/" for 10.131.137.254 at 2017-05-02 11:45:05 -0400
+Cannot render console from 10.131.137.254! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BusquedasController#indice as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SN9QQlcvtAViqCAaIMmCMvz10YIlAf32b0Dsa9V/1++rHNCOeMgn+2/6RqudJkYq1nGo0q/+ftlkndKtvfniPw==", "term"=>"todos", "commit"=>"Buscar"}
+  Rendering busquedas/indice.html.erb within layouts/application
+MONGODB | 10.131.137.188:27017 | grupo_07.find | STARTED | {"find"=>"gutenberg", "filter"=>{"term"=>"todos"}}
+MONGODB | 10.131.137.188:27017 | grupo_07.find | SUCCEEDED | 1.305294266s
+  Rendered busquedas/indice.html.erb within layouts/application (1307.7ms)
+Completed 200 OK in 1331ms (Views: 1329.9ms)
+
+
+Started GET "/" for 10.131.137.254 at 2017-05-02 11:49:43 -0400
+Cannot render console from 10.131.137.254! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BusquedasController#indice as HTML
+  Rendering busquedas/indice.html.erb within layouts/application
+  Rendered busquedas/indice.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 279ms (Views: 246.4ms)
+
+
+Started POST "/" for 10.131.137.254 at 2017-05-02 11:50:00 -0400
+Cannot render console from 10.131.137.254! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BusquedasController#indice as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nyYHuzbWl1oB9ZDTofIkj8ARWlU76PQOSgfqAlCD2SF85Yd3GTEEpAyn9mIcHeCX6pUjBbEXdyFB2tTEOAXs8Q==", "term"=>"todos", "commit"=>"Buscar"}
+  Rendering busquedas/indice.html.erb within layouts/application
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | Server 10.131.137.188:27017 initializing.
+MONGODB | Topology type 'unknown' changed to type 'single'.
+MONGODB | Server description for 10.131.137.188:27017 changed from 'unknown' to 'standalone'.
+MONGODB | There was a change in the members of the 'single' topology.
+MONGODB | 10.131.137.188:27017 | grupo_07.find | STARTED | {"find"=>"gutenberg", "filter"=>{"term"=>"todos"}}
+MONGODB | 10.131.137.188:27017 | grupo_07.saslStart | STARTED | {}
+MONGODB | 10.131.137.188:27017 | grupo_07.saslStart | SUCCEEDED | 0.005122656s
+MONGODB | 10.131.137.188:27017 | grupo_07.saslContinue | STARTED | {}
+MONGODB | 10.131.137.188:27017 | grupo_07.saslContinue | SUCCEEDED | 0.001530394s
+MONGODB | 10.131.137.188:27017 | grupo_07.saslContinue | STARTED | {}
+MONGODB | 10.131.137.188:27017 | grupo_07.saslContinue | SUCCEEDED | 0.0018382070000000001s
+MONGODB | 10.131.137.188:27017 | grupo_07.find | SUCCEEDED | 1.332870273s
+  Rendered busquedas/indice.html.erb within layouts/application (1341.1ms)
+Completed 200 OK in 1374ms (Views: 1356.7ms)
+
+
+Started GET "/" for 10.131.137.254 at 2017-05-02 12:01:02 -0400
+Cannot render console from 10.131.137.254! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BusquedasController#indice as HTML
+  Rendering busquedas/indice.html.erb within layouts/application
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | Server 10.131.137.188:27017 initializing.
+MONGODB | Topology type 'unknown' changed to type 'single'.
+MONGODB | Server description for 10.131.137.188:27017 changed from 'unknown' to 'standalone'.
+MONGODB | There was a change in the members of the 'single' topology.
+MONGODB | 10.131.137.188:27017 | grupo_07.find | STARTED | {"find"=>"gutenberg", "filter"=>{}}
+MONGODB | 10.131.137.188:27017 | grupo_07.saslStart | STARTED | {}
+MONGODB | 10.131.137.188:27017 | grupo_07.saslStart | SUCCEEDED | 0.008494693s
+MONGODB | 10.131.137.188:27017 | grupo_07.saslContinue | STARTED | {}
+MONGODB | 10.131.137.188:27017 | grupo_07.saslContinue | SUCCEEDED | 0.000635458s
+MONGODB | 10.131.137.188:27017 | grupo_07.saslContinue | STARTED | {}
+MONGODB | 10.131.137.188:27017 | grupo_07.saslContinue | SUCCEEDED | 0.001409315s
+MONGODB | 10.131.137.188:27017 | grupo_07.find | SUCCEEDED | 0.029527252s
+MONGODB | 10.131.137.188:27017 | grupo_07.getMore | STARTED | {"getMore"=>50613858091, "collection"=>"gutenberg"}
+MONGODB | 10.131.137.188:27017 | grupo_07.getMore | SUCCEEDED | 1.611726691s
+MONGODB | 10.131.137.188:27017 | grupo_07.getMore | STARTED | {"getMore"=>50613858091, "collection"=>"gutenberg"}
+MONGODB | 10.131.137.188:27017 | grupo_07.getMore | SUCCEEDED | 2.1313309310000004s
+MONGODB | 10.131.137.188:27017 | grupo_07.getMore | STARTED | {"getMore"=>50613858091, "collection"=>"gutenberg"}
+MONGODB | 10.131.137.188:27017 | grupo_07.getMore | SUCCEEDED | 1.6458876150000001s
+MONGODB | 10.131.137.188:27017 | grupo_07.getMore | STARTED | {"getMore"=>50613858091, "collection"=>"gutenberg"}
+MONGODB | 10.131.137.188:27017 | grupo_07.getMore | SUCCEEDED | 1.744011594s
+MONGODB | 10.131.137.188:27017 | grupo_07.getMore | STARTED | {"getMore"=>50613858091, "collection"=>"gutenberg"}
+MONGODB | 10.131.137.188:27017 | grupo_07.getMore | SUCCEEDED | 1.940494431s
+MONGODB | 10.131.137.188:27017 | grupo_07.getMore | STARTED | {"getMore"=>50613858091, "collection"=>"gutenberg"}
+MONGODB | 10.131.137.188:27017 | grupo_07.getMore | SUCCEEDED | 1.8802272930000001s
+MONGODB | 10.131.137.188:27017 | grupo_07.getMore | STARTED | {"getMore"=>50613858091, "collection"=>"gutenberg"}
+MONGODB | 10.131.137.188:27017 | grupo_07.getMore | SUCCEEDED | 0.8008236510000001s
+  Rendered busquedas/indice.html.erb within layouts/application (46531.1ms)
+Completed 200 OK in 47402ms (Views: 47260.5ms)
+
+
+Started GET "/" for 10.131.137.254 at 2017-05-02 12:03:32 -0400
+Cannot render console from 10.131.137.254! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BusquedasController#indice as HTML
+  Rendering busquedas/indice.html.erb within layouts/application
+  Rendered busquedas/indice.html.erb within layouts/application (12.3ms)
+Completed 200 OK in 267ms (Views: 235.1ms)
+
+
+Started POST "/" for 10.131.137.254 at 2017-05-02 12:03:43 -0400
+Cannot render console from 10.131.137.254! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BusquedasController#indice as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VY2CDpJMqPfXtzLmCMLDAybKR2RUWfGwxS4bS8uGvD22TgLCvas7CdrlVFe1LQcbDE4+NN6mcp/O8yWNowCJ7Q==", "term"=>"perecer", "commit"=>"Buscar"}
+  Rendering busquedas/indice.html.erb within layouts/application
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | Server 10.131.137.188:27017 initializing.
+MONGODB | Topology type 'unknown' changed to type 'single'.
+MONGODB | Server description for 10.131.137.188:27017 changed from 'unknown' to 'standalone'.
+MONGODB | There was a change in the members of the 'single' topology.
+MONGODB | 10.131.137.188:27017 | grupo_07.find | STARTED | {"find"=>"gutenberg", "filter"=>{"term"=>"perecer"}}
+MONGODB | 10.131.137.188:27017 | grupo_07.saslStart | STARTED | {}
+MONGODB | 10.131.137.188:27017 | grupo_07.saslStart | SUCCEEDED | 0.0040785150000000004s
+MONGODB | 10.131.137.188:27017 | grupo_07.saslContinue | STARTED | {}
+MONGODB | 10.131.137.188:27017 | grupo_07.saslContinue | SUCCEEDED | 0.000754384s
+MONGODB | 10.131.137.188:27017 | grupo_07.saslContinue | STARTED | {}
+MONGODB | 10.131.137.188:27017 | grupo_07.saslContinue | SUCCEEDED | 0.0013609450000000001s
+MONGODB | 10.131.137.188:27017 | grupo_07.find | SUCCEEDED | 1.3550109689999998s
+  Rendered busquedas/indice.html.erb within layouts/application (1363.1ms)
+Completed 200 OK in 1408ms (Views: 1392.1ms)
+
+
+Started POST "/" for 10.131.137.254 at 2017-05-02 12:05:48 -0400
+Cannot render console from 10.131.137.254! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BusquedasController#indice as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OducPGwZF2/ClEtGUhKz5IUMn6EX5uQLt9XA+mL6Nb/aGBzwQ/6Ekc/GLffv/Xf8r4jm8Z0ZZyS8CP48CnwAbw==", "term"=>"perecer", "commit"=>"Buscar"}
+  Rendering busquedas/indice.html.erb within layouts/application
+MONGODB | 10.131.137.188:27017 | grupo_07.find | STARTED | {"find"=>"gutenberg", "filter"=>{"term"=>"perecer"}}
+MONGODB | 10.131.137.188:27017 | grupo_07.find | SUCCEEDED | 1.304664798s
+  Rendered busquedas/indice.html.erb within layouts/application (1307.3ms)
+Completed 200 OK in 1332ms (Views: 1330.3ms)
+
+
+Started GET "/" for 10.131.137.254 at 2017-05-02 12:09:24 -0400
+Cannot render console from 10.131.137.254! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BusquedasController#indice as HTML
+  Rendering busquedas/indice.html.erb within layouts/application
+  Rendered busquedas/indice.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 264ms (Views: 231.4ms)
+
+
+Started GET "/?utf8=%E2%9C%93&term=perecer&commit=Buscar" for 10.131.137.254 at 2017-05-02 12:09:28 -0400
+Cannot render console from 10.131.137.254! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BusquedasController#indice as HTML
+  Parameters: {"utf8"=>"✓", "term"=>"perecer", "commit"=>"Buscar"}
+  Rendering busquedas/indice.html.erb within layouts/application
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | Server 10.131.137.188:27017 initializing.
+MONGODB | Topology type 'unknown' changed to type 'single'.
+MONGODB | Server description for 10.131.137.188:27017 changed from 'unknown' to 'standalone'.
+MONGODB | There was a change in the members of the 'single' topology.
+MONGODB | 10.131.137.188:27017 | grupo_07.find | STARTED | {"find"=>"gutenberg", "filter"=>{"term"=>"perecer"}}
+MONGODB | 10.131.137.188:27017 | grupo_07.saslStart | STARTED | {}
+MONGODB | 10.131.137.188:27017 | grupo_07.saslStart | SUCCEEDED | 0.004388078s
+MONGODB | 10.131.137.188:27017 | grupo_07.saslContinue | STARTED | {}
+MONGODB | 10.131.137.188:27017 | grupo_07.saslContinue | SUCCEEDED | 0.00081846s
+MONGODB | 10.131.137.188:27017 | grupo_07.saslContinue | STARTED | {}
+MONGODB | 10.131.137.188:27017 | grupo_07.saslContinue | SUCCEEDED | 0.0011828399999999999s
+MONGODB | 10.131.137.188:27017 | grupo_07.find | SUCCEEDED | 1.35703959s
+  Rendered busquedas/indice.html.erb within layouts/application (1363.3ms)
+Completed 200 OK in 1399ms (Views: 1386.6ms)
+
+
+Started GET "/?utf8=%E2%9C%93&term=perecer&commit=Buscar" for 10.131.137.254 at 2017-05-02 12:11:05 -0400
+Cannot render console from 10.131.137.254! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BusquedasController#indice as HTML
+  Parameters: {"utf8"=>"✓", "term"=>"perecer", "commit"=>"Buscar"}
+  Rendering busquedas/indice.html.erb within layouts/application
+  Rendered busquedas/indice.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 299ms (Views: 266.7ms)
+
+
+Started POST "/" for 10.131.137.254 at 2017-05-02 12:12:11 -0400
+Cannot render console from 10.131.137.254! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BusquedasController#indice as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BL/6k5is1dQjeoqeaUmsOupvnlwRi9gBcOyMPesACtXnfHpft0tGKi4o7C/UpmgiwOvnDJt0Wy57MbL7g4Y/BQ==", "busque"=>"perecer", "commit"=>"Buscar"}
+  Rendering busquedas/indice.html.erb within layouts/application
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | Server 10.131.137.188:27017 initializing.
+MONGODB | Topology type 'unknown' changed to type 'single'.
+MONGODB | Server description for 10.131.137.188:27017 changed from 'unknown' to 'standalone'.
+MONGODB | There was a change in the members of the 'single' topology.
+MONGODB | 10.131.137.188:27017 | grupo_07.find | STARTED | {"find"=>"gutenberg", "filter"=>{"busque"=>"perecer"}}
+MONGODB | 10.131.137.188:27017 | grupo_07.saslStart | STARTED | {}
+MONGODB | 10.131.137.188:27017 | grupo_07.saslStart | SUCCEEDED | 0.012171517s
+MONGODB | 10.131.137.188:27017 | grupo_07.saslContinue | STARTED | {}
+MONGODB | 10.131.137.188:27017 | grupo_07.saslContinue | SUCCEEDED | 0.006682705s
+MONGODB | 10.131.137.188:27017 | grupo_07.saslContinue | STARTED | {}
+MONGODB | 10.131.137.188:27017 | grupo_07.saslContinue | SUCCEEDED | 0.001380379s
+MONGODB | 10.131.137.188:27017 | grupo_07.find | SUCCEEDED | 1.3135274209999999s
+  Rendered busquedas/indice.html.erb within layouts/application (1360.1ms)
+Completed 200 OK in 1406ms (Views: 1387.1ms)
+
+
+Started GET "/" for 10.131.137.254 at 2017-05-02 16:54:57 -0400
+Cannot render console from 10.131.137.254! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BusquedasController#indice as HTML
+  Rendering busquedas/indice.html.erb within layouts/application
+  Rendered busquedas/indice.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 442ms (Views: 406.7ms)
+
+
+Started POST "/" for 10.131.137.254 at 2017-05-02 16:56:49 -0400
+Cannot render console from 10.131.137.254! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BusquedasController#indice as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Wuhh/pqZ7+MY1TbLKOGhgWo9Zp78NWQOEK6ilA3sw6aJt4ub0BwEcuBR+U/plf2y2BsAZKGQtmA8uhalSyt0aA==", "busque"=>"todos", "commit"=>"Buscar"}
+  Rendering busquedas/indice.html.erb within layouts/application
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | Server 10.131.137.188:27017 initializing.
+MONGODB | Topology type 'unknown' changed to type 'single'.
+MONGODB | Server description for 10.131.137.188:27017 changed from 'unknown' to 'standalone'.
+MONGODB | There was a change in the members of the 'single' topology.
+MONGODB | 10.131.137.188:27017 | grupo_07.find | STARTED | {"find"=>"gutenberg", "filter"=>{"busque"=>"todos"}}
+MONGODB | 10.131.137.188:27017 | grupo_07.saslStart | STARTED | {}
+MONGODB | 10.131.137.188:27017 | grupo_07.saslStart | SUCCEEDED | 0.007015232s
+MONGODB | 10.131.137.188:27017 | grupo_07.saslContinue | STARTED | {}
+MONGODB | 10.131.137.188:27017 | grupo_07.saslContinue | SUCCEEDED | 0.0012669579999999999s
+MONGODB | 10.131.137.188:27017 | grupo_07.saslContinue | STARTED | {}
+MONGODB | 10.131.137.188:27017 | grupo_07.saslContinue | SUCCEEDED | 0.002290951s
+MONGODB | 10.131.137.188:27017 | grupo_07.find | SUCCEEDED | 1.30707659s
+  Rendered busquedas/indice.html.erb within layouts/application (1319.7ms)
+Completed 200 OK in 1374ms (Views: 1343.9ms)
+
+
+Started GET "/" for 10.131.137.254 at 2017-05-02 17:00:44 -0400
+Cannot render console from 10.131.137.254! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BusquedasController#indice as HTML
+  Rendering busquedas/indice.html.erb within layouts/application
+  Rendered busquedas/indice.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 257ms (Views: 219.4ms)
+
+
+Started POST "/" for 10.131.137.254 at 2017-05-02 17:00:50 -0400
+Cannot render console from 10.131.137.254! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BusquedasController#indice as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AM1P8ZZTRDVTxqGA9QyN48FkUnRiAx43ZlX2w07FVN3TkqWU3NavpKtCbgQ0eNHQc0I0jj+mzFlKQULyCALjEw==", "busque"=>"todos", "commit"=>"Buscar"}
+  Rendering busquedas/indice.html.erb within layouts/application
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | Server 10.131.137.188:27017 initializing.
+MONGODB | Topology type 'unknown' changed to type 'single'.
+MONGODB | Server description for 10.131.137.188:27017 changed from 'unknown' to 'standalone'.
+MONGODB | There was a change in the members of the 'single' topology.
+MONGODB | 10.131.137.188:27017 | grupo_07.find | STARTED | {"find"=>"gutenberg", "filter"=>{"word"=>"todos"}}
+MONGODB | 10.131.137.188:27017 | grupo_07.saslStart | STARTED | {}
+MONGODB | 10.131.137.188:27017 | grupo_07.saslStart | SUCCEEDED | 0.0053213769999999995s
+MONGODB | 10.131.137.188:27017 | grupo_07.saslContinue | STARTED | {}
+MONGODB | 10.131.137.188:27017 | grupo_07.saslContinue | SUCCEEDED | 0.001200685s
+MONGODB | 10.131.137.188:27017 | grupo_07.saslContinue | STARTED | {}
+MONGODB | 10.131.137.188:27017 | grupo_07.saslContinue | SUCCEEDED | 0.001079701s
+MONGODB | 10.131.137.188:27017 | grupo_07.find | SUCCEEDED | 1.2305643949999998s
+  Rendered busquedas/indice.html.erb within layouts/application (1243.0ms)
+Completed 200 OK in 1283ms (Views: 1266.3ms)
+
+
+Started POST "/" for 10.131.137.254 at 2017-05-02 17:03:51 -0400
+Cannot render console from 10.131.137.254! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BusquedasController#indice as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"E8/tc8dfvyIz5Eeh36+ebR32TB4GPsI+nu3W5T6uhbjAkAcWjdpUs8tgiCUe28Jer9Aq5FubEFCy+WLUeGkydg==", "busque"=>"todos", "commit"=>"Buscar"}
+  Rendering busquedas/indice.html.erb within layouts/application
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | Server 10.131.137.188:27017 initializing.
+MONGODB | Topology type 'unknown' changed to type 'single'.
+MONGODB | Server description for 10.131.137.188:27017 changed from 'unknown' to 'standalone'.
+MONGODB | There was a change in the members of the 'single' topology.
+MONGODB | 10.131.137.188:27017 | grupo_07.find | STARTED | {"find"=>"gutenberg", "filter"=>{"word"=>"todos"}, "sort"=>{"numero"=>1}}
+MONGODB | 10.131.137.188:27017 | grupo_07.saslStart | STARTED | {}
+MONGODB | 10.131.137.188:27017 | grupo_07.saslStart | SUCCEEDED | 0.004884617999999999s
+MONGODB | 10.131.137.188:27017 | grupo_07.saslContinue | STARTED | {}
+MONGODB | 10.131.137.188:27017 | grupo_07.saslContinue | SUCCEEDED | 0.001698658s
+MONGODB | 10.131.137.188:27017 | grupo_07.saslContinue | STARTED | {}
+MONGODB | 10.131.137.188:27017 | grupo_07.saslContinue | SUCCEEDED | 0.001513131s
+MONGODB | 10.131.137.188:27017 | grupo_07.find | SUCCEEDED | 1.497244497s
+  Rendered busquedas/indice.html.erb within layouts/application (1527.5ms)
+Completed 200 OK in 1826ms (Views: 1774.8ms)
+
+
+Started GET "/" for 10.131.137.254 at 2017-05-02 17:04:45 -0400
+Cannot render console from 10.131.137.254! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BusquedasController#indice as HTML
+  Rendering busquedas/indice.html.erb within layouts/application
+  Rendered busquedas/indice.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 238ms (Views: 206.4ms)
+
+
+Started POST "/" for 10.131.137.254 at 2017-05-02 17:04:49 -0400
+Cannot render console from 10.131.137.254! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BusquedasController#indice as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7u0PYykmcv2vkQxdQ9AMTxXII1e/L7yLe3qBwgC39Dk9suUGY6OZbFcVw9mCpFB8p+5FreKKbuVXbjXzRnBD9w==", "busque"=>"todos", "commit"=>"Buscar"}
+  Rendering busquedas/indice.html.erb within layouts/application
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | Server 10.131.137.188:27017 initializing.
+MONGODB | Topology type 'unknown' changed to type 'single'.
+MONGODB | Server description for 10.131.137.188:27017 changed from 'unknown' to 'standalone'.
+MONGODB | There was a change in the members of the 'single' topology.
+MONGODB | 10.131.137.188:27017 | grupo_07.find | STARTED | {"find"=>"gutenberg", "filter"=>{"word"=>"todos"}, "limit"=>5}
+MONGODB | 10.131.137.188:27017 | grupo_07.saslStart | STARTED | {}
+MONGODB | 10.131.137.188:27017 | grupo_07.saslStart | SUCCEEDED | 0.005703733s
+MONGODB | 10.131.137.188:27017 | grupo_07.saslContinue | STARTED | {}
+MONGODB | 10.131.137.188:27017 | grupo_07.saslContinue | SUCCEEDED | 0.001881449s
+MONGODB | 10.131.137.188:27017 | grupo_07.saslContinue | STARTED | {}
+MONGODB | 10.131.137.188:27017 | grupo_07.saslContinue | SUCCEEDED | 0.001948788s
+MONGODB | 10.131.137.188:27017 | grupo_07.find | SUCCEEDED | 0.165614871s
+  Rendered busquedas/indice.html.erb within layouts/application (175.4ms)
+Completed 200 OK in 251ms (Views: 201.1ms)
+
+
+Started GET "/" for 10.131.137.254 at 2017-05-02 17:05:54 -0400
+Cannot render console from 10.131.137.254! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BusquedasController#indice as HTML
+  Rendering busquedas/indice.html.erb within layouts/application
+  Rendered busquedas/indice.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 230ms (Views: 198.8ms)
+
+
+Started POST "/" for 10.131.137.254 at 2017-05-02 17:05:58 -0400
+Cannot render console from 10.131.137.254! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BusquedasController#indice as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vPZuuw3OlboMC/qsPgvYXLHOLmOCNHWK6iS4WDO2mkxvqYTeR0t+K/SPNSj/f4RvA+hImd+Rp+TGMAxpdXEtgg==", "busque"=>"todos", "commit"=>"Buscar"}
+  Rendering busquedas/indice.html.erb within layouts/application
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | Server 10.131.137.188:27017 initializing.
+MONGODB | Topology type 'unknown' changed to type 'single'.
+MONGODB | Server description for 10.131.137.188:27017 changed from 'unknown' to 'standalone'.
+MONGODB | There was a change in the members of the 'single' topology.
+MONGODB | 10.131.137.188:27017 | grupo_07.find | STARTED | {"find"=>"gutenberg", "filter"=>{"word"=>"todos"}, "limit"=>10, "sort"=>{"numero"=>1}}
+MONGODB | 10.131.137.188:27017 | grupo_07.saslStart | STARTED | {}
+MONGODB | 10.131.137.188:27017 | grupo_07.saslStart | SUCCEEDED | 0.015461556000000001s
+MONGODB | 10.131.137.188:27017 | grupo_07.saslContinue | STARTED | {}
+MONGODB | 10.131.137.188:27017 | grupo_07.saslContinue | SUCCEEDED | 0.000986075s
+MONGODB | 10.131.137.188:27017 | grupo_07.saslContinue | STARTED | {}
+MONGODB | 10.131.137.188:27017 | grupo_07.saslContinue | SUCCEEDED | 0.001991752s
+MONGODB | 10.131.137.188:27017 | grupo_07.find | SUCCEEDED | 1.463446407s
+  Rendered busquedas/indice.html.erb within layouts/application (1473.7ms)
+Completed 200 OK in 1515ms (Views: 1499.2ms)
+
+
+Started GET "/" for 10.131.137.254 at 2017-05-02 17:08:41 -0400
+Cannot render console from 10.131.137.254! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BusquedasController#indice as HTML
+  Rendering busquedas/indice.html.erb within layouts/application
+  Rendered busquedas/indice.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 293ms (Views: 268.4ms)
+
+
+Started POST "/" for 10.131.137.254 at 2017-05-02 17:08:45 -0400
+Cannot render console from 10.131.137.254! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BusquedasController#indice as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RjEj6KdHq1JIWed4oX0Rjo2OmZARgpXSzEX1APt9BiWVbsmN7cJAw7DdKPxgCU29P6j/akwnR7zgUUExvbqx6w==", "busque"=>"todos", "commit"=>"Buscar"}
+  Rendering busquedas/indice.html.erb within layouts/application
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | Server 10.131.137.188:27017 initializing.
+MONGODB | Topology type 'unknown' changed to type 'single'.
+MONGODB | Server description for 10.131.137.188:27017 changed from 'unknown' to 'standalone'.
+MONGODB | There was a change in the members of the 'single' topology.
+MONGODB | 10.131.137.188:27017 | grupo_07.find | STARTED | {"find"=>"gutenberg", "filter"=>{"word"=>"todos"}, "limit"=>10, "sort"=>{"numero"=>1}}
+MONGODB | 10.131.137.188:27017 | grupo_07.saslStart | STARTED | {}
+MONGODB | 10.131.137.188:27017 | grupo_07.saslStart | SUCCEEDED | 0.005588620000000001s
+MONGODB | 10.131.137.188:27017 | grupo_07.saslContinue | STARTED | {}
+MONGODB | 10.131.137.188:27017 | grupo_07.saslContinue | SUCCEEDED | 0.0010997110000000002s
+MONGODB | 10.131.137.188:27017 | grupo_07.saslContinue | STARTED | {}
+MONGODB | 10.131.137.188:27017 | grupo_07.saslContinue | SUCCEEDED | 0.00146444s
+MONGODB | 10.131.137.188:27017 | grupo_07.find | SUCCEEDED | 1.514531523s
+  Rendered busquedas/indice.html.erb within layouts/application (1527.8ms)
+Completed 200 OK in 1570ms (Views: 1551.9ms)
+
+
+Started GET "/" for 10.131.137.254 at 2017-05-02 17:25:01 -0400
+Cannot render console from 10.131.137.254! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BusquedasController#indice as HTML
+  Rendering busquedas/indice.html.erb within layouts/application
+  Rendered busquedas/indice.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 267ms (Views: 234.0ms)
+
+
+Started POST "/" for 10.131.137.254 at 2017-05-02 17:25:05 -0400
+Cannot render console from 10.131.137.254! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BusquedasController#indice as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CN2kbxXplSOhSzpk9iRbbwC2X2Aqwb1s92ITbeZ2NMrbgk4KX2x+slnP9eA3UAdcspA5mndkbwLbdqdcoLGDBA==", "busque"=>"todos", "commit"=>"Buscar"}
+  Rendering busquedas/indice.html.erb within layouts/application
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | Server 10.131.137.188:27017 initializing.
+MONGODB | Topology type 'unknown' changed to type 'single'.
+MONGODB | Server description for 10.131.137.188:27017 changed from 'unknown' to 'standalone'.
+MONGODB | There was a change in the members of the 'single' topology.
+MONGODB | 10.131.137.188:27017 | grupo_07.find | STARTED | {"find"=>"gutenberg", "filter"=>{"word"=>"todos"}, "limit"=>10, "sort"=>{"numero"=>1}}
+MONGODB | 10.131.137.188:27017 | grupo_07.saslStart | STARTED | {}
+MONGODB | 10.131.137.188:27017 | grupo_07.saslStart | SUCCEEDED | 0.005765969s
+MONGODB | 10.131.137.188:27017 | grupo_07.saslContinue | STARTED | {}
+MONGODB | 10.131.137.188:27017 | grupo_07.saslContinue | SUCCEEDED | 0.0017424790000000001s
+MONGODB | 10.131.137.188:27017 | grupo_07.saslContinue | STARTED | {}
+MONGODB | 10.131.137.188:27017 | grupo_07.saslContinue | SUCCEEDED | 0.001978473s
+MONGODB | 10.131.137.188:27017 | grupo_07.find | SUCCEEDED | 1.492931733s
+  Rendered busquedas/indice.html.erb within layouts/application (1502.1ms)
+Completed 200 OK in 1536ms (Views: 1518.0ms)
+
+
+Started POST "/" for 10.131.137.254 at 2017-05-02 17:25:48 -0400
+Cannot render console from 10.131.137.254! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BusquedasController#indice as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NoF/U2gmI+UlVTKtZ91wK0AJrOhQZFvzSu1Bg27mfFrl3pU2IqPIdN3R/SmmqSwY8i/KEg3BiZ1m+fWyKCHLlA==", "busque"=>"todos", "commit"=>"Buscar"}
+  Rendering busquedas/indice.html.erb within layouts/application
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | Server 10.131.137.188:27017 initializing.
+MONGODB | Topology type 'unknown' changed to type 'single'.
+MONGODB | Server description for 10.131.137.188:27017 changed from 'unknown' to 'standalone'.
+MONGODB | There was a change in the members of the 'single' topology.
+MONGODB | 10.131.137.188:27017 | grupo_07.find | STARTED | {"find"=>"gutenberg", "filter"=>{"word"=>"todos"}, "limit"=>10, "sort"=>{"numero"=>1}}
+MONGODB | 10.131.137.188:27017 | grupo_07.saslStart | STARTED | {}
+MONGODB | 10.131.137.188:27017 | grupo_07.saslStart | SUCCEEDED | 0.006412115s
+MONGODB | 10.131.137.188:27017 | grupo_07.saslContinue | STARTED | {}
+MONGODB | 10.131.137.188:27017 | grupo_07.saslContinue | SUCCEEDED | 0.001197239s
+MONGODB | 10.131.137.188:27017 | grupo_07.saslContinue | STARTED | {}
+MONGODB | 10.131.137.188:27017 | grupo_07.saslContinue | SUCCEEDED | 0.001639431s
+MONGODB | 10.131.137.188:27017 | grupo_07.find | SUCCEEDED | 1.4485545210000002s
+  Rendered busquedas/indice.html.erb within layouts/application (1469.0ms)
+Completed 200 OK in 1797ms (Views: 1734.1ms)
+
+
+Started GET "/" for 10.131.137.254 at 2017-05-02 17:26:24 -0400
+Cannot render console from 10.131.137.254! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BusquedasController#indice as HTML
+  Rendering busquedas/indice.html.erb within layouts/application
+  Rendered busquedas/indice.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 289ms (Views: 259.0ms)
+
+
+Started POST "/" for 10.131.137.254 at 2017-05-02 17:26:28 -0400
+Cannot render console from 10.131.137.254! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BusquedasController#indice as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2BIMa2K/4/vQGOcwqkm0DjIvkhiYxizwVJcxzm2KJKgLTeYOKDoIaiicKLRrPeg9gAn04sVj/p54g4X/K02TZg==", "busque"=>"todos", "commit"=>"Buscar"}
+  Rendering busquedas/indice.html.erb within layouts/application
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | Server 10.131.137.188:27017 initializing.
+MONGODB | Topology type 'unknown' changed to type 'single'.
+MONGODB | Server description for 10.131.137.188:27017 changed from 'unknown' to 'standalone'.
+MONGODB | There was a change in the members of the 'single' topology.
+MONGODB | 10.131.137.188:27017 | grupo_07.find | STARTED | {"find"=>"gutenberg", "filter"=>{"word"=>"todos"}, "limit"=>10, "sort"=>{"numero"=>1}}
+MONGODB | 10.131.137.188:27017 | grupo_07.saslStart | STARTED | {}
+MONGODB | 10.131.137.188:27017 | grupo_07.saslStart | SUCCEEDED | 0.004969778s
+MONGODB | 10.131.137.188:27017 | grupo_07.saslContinue | STARTED | {}
+MONGODB | 10.131.137.188:27017 | grupo_07.saslContinue | SUCCEEDED | 0.0008281170000000001s
+MONGODB | 10.131.137.188:27017 | grupo_07.saslContinue | STARTED | {}
+MONGODB | 10.131.137.188:27017 | grupo_07.saslContinue | SUCCEEDED | 0.001787795s
+MONGODB | 10.131.137.188:27017 | grupo_07.find | SUCCEEDED | 1.510414533s
+  Rendered busquedas/indice.html.erb within layouts/application (1521.5ms)
+Completed 200 OK in 1564ms (Views: 1546.3ms)
+
+
+Started GET "/" for 10.131.137.254 at 2017-05-02 17:27:11 -0400
+Cannot render console from 10.131.137.254! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BusquedasController#indice as HTML
+  Rendering busquedas/indice.html.erb within layouts/application
+  Rendered busquedas/indice.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 253ms (Views: 219.7ms)
+
+
+Started POST "/" for 10.131.137.254 at 2017-05-02 17:27:16 -0400
+Cannot render console from 10.131.137.254! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BusquedasController#indice as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gcH4+f57+tMpT131dPPQgehc0VwZamtQI1YistAiOp1SnhKctP4RQtHLknG1h4yyWnq3pkTPuT4PQpaDluWNUw==", "busque"=>"todos", "commit"=>"Buscar"}
+  Rendering busquedas/indice.html.erb within layouts/application
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | Server 10.131.137.188:27017 initializing.
+MONGODB | Topology type 'unknown' changed to type 'single'.
+MONGODB | Server description for 10.131.137.188:27017 changed from 'unknown' to 'standalone'.
+MONGODB | There was a change in the members of the 'single' topology.
+MONGODB | 10.131.137.188:27017 | grupo_07.find | STARTED | {"find"=>"gutenberg", "filter"=>{"word"=>"todos"}, "limit"=>10, "sort"=>{"numero"=>1}}
+MONGODB | 10.131.137.188:27017 | grupo_07.saslStart | STARTED | {}
+MONGODB | 10.131.137.188:27017 | grupo_07.saslStart | SUCCEEDED | 0.005523737s
+MONGODB | 10.131.137.188:27017 | grupo_07.saslContinue | STARTED | {}
+MONGODB | 10.131.137.188:27017 | grupo_07.saslContinue | SUCCEEDED | 0.0006738600000000001s
+MONGODB | 10.131.137.188:27017 | grupo_07.saslContinue | STARTED | {}
+MONGODB | 10.131.137.188:27017 | grupo_07.saslContinue | SUCCEEDED | 0.001678856s
+MONGODB | 10.131.137.188:27017 | grupo_07.find | SUCCEEDED | 1.514179051s
+  Rendered busquedas/indice.html.erb within layouts/application (1523.2ms)
+Completed 200 OK in 1560ms (Views: 1542.8ms)
+
+
+Started POST "/" for 10.131.137.254 at 2017-05-02 17:27:48 -0400
+Cannot render console from 10.131.137.254! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BusquedasController#indice as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"c9lo+aSk8twgjOhktAXNvV7BqvDJ2j7q0p1SBSpJEqqghoKc7iEZTdgIJ+B1cZGO7OfMCpR/7IT+ieY0bI6lZA==", "busque"=>"", "commit"=>"Buscar"}
+  Rendering busquedas/indice.html.erb within layouts/application
+  Rendered busquedas/indice.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 271ms (Views: 248.7ms)
+
+
+Started POST "/" for 10.131.137.254 at 2017-05-02 17:27:53 -0400
+Cannot render console from 10.131.137.254! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BusquedasController#indice as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"60RW+WNla87bll50+EqYu/blo6qCt30E8F3aTqH8y0k4G7ycKeCAXyMSkfA5PsSIRMPFUN8Sr2rcSW5/5zt8hw==", "busque"=>"todos", "commit"=>"Buscar"}
+  Rendering busquedas/indice.html.erb within layouts/application
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | Server 10.131.137.188:27017 initializing.
+MONGODB | Topology type 'unknown' changed to type 'single'.
+MONGODB | Server description for 10.131.137.188:27017 changed from 'unknown' to 'standalone'.
+MONGODB | There was a change in the members of the 'single' topology.
+MONGODB | 10.131.137.188:27017 | grupo_07.find | STARTED | {"find"=>"gutenberg", "filter"=>{"word"=>"todos"}, "sort"=>{"numero"=>1}}
+MONGODB | 10.131.137.188:27017 | grupo_07.saslStart | STARTED | {}
+MONGODB | 10.131.137.188:27017 | grupo_07.saslStart | SUCCEEDED | 0.005146854s
+MONGODB | 10.131.137.188:27017 | grupo_07.saslContinue | STARTED | {}
+MONGODB | 10.131.137.188:27017 | grupo_07.saslContinue | SUCCEEDED | 0.000804245s
+MONGODB | 10.131.137.188:27017 | grupo_07.saslContinue | STARTED | {}
+MONGODB | 10.131.137.188:27017 | grupo_07.saslContinue | SUCCEEDED | 0.001828414s
+MONGODB | 10.131.137.188:27017 | grupo_07.find | SUCCEEDED | 1.431418967s
+  Rendered busquedas/indice.html.erb within layouts/application (1443.9ms)
+Completed 200 OK in 1484ms (Views: 1467.6ms)
+
+
+Started GET "/" for 10.131.137.254 at 2017-05-02 17:30:19 -0400
+Cannot render console from 10.131.137.254! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BusquedasController#indice as HTML
+  Rendering busquedas/indice.html.erb within layouts/application
+  Rendered busquedas/indice.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 265ms (Views: 232.2ms)
+
+
+Started POST "/" for 10.131.137.254 at 2017-05-02 17:30:23 -0400
+Cannot render console from 10.131.137.254! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BusquedasController#indice as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"L65NwDqu7pe36lhriqgl3qQDGtkVYnc1mxFsAyxsdo/88aelcCsFBk9ul+9L3HntFiV8I0jHpVu3BdgyaqvBQQ==", "busque"=>"todos", "commit"=>"Buscar"}
+  Rendering busquedas/indice.html.erb within layouts/application
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | Server 10.131.137.188:27017 initializing.
+MONGODB | Topology type 'unknown' changed to type 'single'.
+MONGODB | Server description for 10.131.137.188:27017 changed from 'unknown' to 'standalone'.
+MONGODB | There was a change in the members of the 'single' topology.
+MONGODB | 10.131.137.188:27017 | grupo_07.find | STARTED | {"find"=>"gutenberg", "filter"=>{"word"=>"todos"}, "sort"=>{"numero"=>1}}
+MONGODB | 10.131.137.188:27017 | grupo_07.saslStart | STARTED | {}
+MONGODB | 10.131.137.188:27017 | grupo_07.saslStart | SUCCEEDED | 0.005439794s
+MONGODB | 10.131.137.188:27017 | grupo_07.saslContinue | STARTED | {}
+MONGODB | 10.131.137.188:27017 | grupo_07.saslContinue | SUCCEEDED | 0.0016534389999999998s
+MONGODB | 10.131.137.188:27017 | grupo_07.saslContinue | STARTED | {}
+MONGODB | 10.131.137.188:27017 | grupo_07.saslContinue | SUCCEEDED | 0.0028408s
+MONGODB | 10.131.137.188:27017 | grupo_07.find | SUCCEEDED | 1.526077872s
+  Rendered busquedas/indice.html.erb within layouts/application (1539.0ms)
+Completed 200 OK in 1579ms (Views: 1562.0ms)
+
+
+Started GET "/" for 10.131.137.254 at 2017-05-02 17:30:59 -0400
+Cannot render console from 10.131.137.254! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BusquedasController#indice as HTML
+  Rendering busquedas/indice.html.erb within layouts/application
+  Rendered busquedas/indice.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 242ms (Views: 221.0ms)
+
+
+Started POST "/" for 10.131.137.254 at 2017-05-02 17:31:03 -0400
+Cannot render console from 10.131.137.254! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BusquedasController#indice as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"REdApgGFLBsDTwJ1mjGOaDrWc3Rh6CNwwsqLw07nbkqXGKrDSwDHivvLzfFbRdJbiPAVjjxN8R7u3j/yCCDZhA==", "busque"=>"todos", "commit"=>"Buscar"}
+  Rendering busquedas/indice.html.erb within layouts/application
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | Server 10.131.137.188:27017 initializing.
+MONGODB | Topology type 'unknown' changed to type 'single'.
+MONGODB | Server description for 10.131.137.188:27017 changed from 'unknown' to 'standalone'.
+MONGODB | There was a change in the members of the 'single' topology.
+MONGODB | 10.131.137.188:27017 | grupo_07.find | STARTED | {"find"=>"gutenberg", "filter"=>{"word"=>"todos"}, "sort"=>{"numero"=>1}}
+MONGODB | 10.131.137.188:27017 | grupo_07.saslStart | STARTED | {}
+MONGODB | 10.131.137.188:27017 | grupo_07.saslStart | SUCCEEDED | 0.005227386s
+MONGODB | 10.131.137.188:27017 | grupo_07.saslContinue | STARTED | {}
+MONGODB | 10.131.137.188:27017 | grupo_07.saslContinue | SUCCEEDED | 0.001625273s
+MONGODB | 10.131.137.188:27017 | grupo_07.saslContinue | STARTED | {}
+MONGODB | 10.131.137.188:27017 | grupo_07.saslContinue | SUCCEEDED | 0.001906744s
+MONGODB | 10.131.137.188:27017 | grupo_07.find | SUCCEEDED | 1.4851099209999998s
+  Rendered busquedas/indice.html.erb within layouts/application (1499.4ms)
+Completed 200 OK in 1545ms (Views: 1528.0ms)
+
+
+Started GET "/" for 10.131.137.254 at 2017-05-02 17:31:24 -0400
+Cannot render console from 10.131.137.254! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BusquedasController#indice as HTML
+  Rendering busquedas/indice.html.erb within layouts/application
+  Rendered busquedas/indice.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 25ms (Views: 24.0ms)
+
+
+Started POST "/" for 10.131.137.254 at 2017-05-02 17:33:02 -0400
+Cannot render console from 10.131.137.254! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BusquedasController#indice as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2roxItpYR0efsAaR+E6QsHCS+fzptZmxciSIAYA74IIJ5dtHkN2s1mc0yRU5OsyDwrSfBrQQS99eMDwwxvxXTA==", "busque"=>"todos", "commit"=>"Buscar"}
+  Rendering busquedas/indice.html.erb within layouts/application
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | Server 10.131.137.188:27017 initializing.
+MONGODB | Topology type 'unknown' changed to type 'single'.
+MONGODB | Server description for 10.131.137.188:27017 changed from 'unknown' to 'standalone'.
+MONGODB | There was a change in the members of the 'single' topology.
+MONGODB | 10.131.137.188:27017 | grupo_07.find | STARTED | {"find"=>"gutenberg", "filter"=>{"word"=>"todos"}, "limit"=>20, "sort"=>{"numero"=>1}}
+MONGODB | 10.131.137.188:27017 | grupo_07.saslStart | STARTED | {}
+MONGODB | 10.131.137.188:27017 | grupo_07.saslStart | SUCCEEDED | 0.0055330859999999996s
+MONGODB | 10.131.137.188:27017 | grupo_07.saslContinue | STARTED | {}
+MONGODB | 10.131.137.188:27017 | grupo_07.saslContinue | SUCCEEDED | 0.001580728s
+MONGODB | 10.131.137.188:27017 | grupo_07.saslContinue | STARTED | {}
+MONGODB | 10.131.137.188:27017 | grupo_07.saslContinue | SUCCEEDED | 0.001765733s
+MONGODB | 10.131.137.188:27017 | grupo_07.find | SUCCEEDED | 1.498385984s
+  Rendered busquedas/indice.html.erb within layouts/application (1520.0ms)
+Completed 200 OK in 1834ms (Views: 1771.9ms)
+
+
+Started GET "/" for 10.131.137.254 at 2017-05-02 18:18:05 -0400
+Cannot render console from 10.131.137.254! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BusquedasController#indice as HTML
+  Rendering busquedas/indice.html.erb within layouts/application
+  Rendered busquedas/indice.html.erb within layouts/application (13.5ms)
+Completed 200 OK in 477ms (Views: 440.0ms)
+
+
+Started POST "/" for 10.131.137.254 at 2017-05-02 18:18:11 -0400
+Cannot render console from 10.131.137.254! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BusquedasController#indice as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dxxXcW9jqZj/gLkdMDrzLK6ZgL//IBdc1UJept5GCbKFd+AdvcfNmOHItv+lQWbnEQcDirlDF2Ubo2Bnp9RcaQ==", "busque"=>"todos", "commit"=>"Buscar"}
+  Rendering busquedas/indice.html.erb within layouts/application
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | Server 10.131.137.188:27017 initializing.
+MONGODB | Topology type 'unknown' changed to type 'single'.
+MONGODB | Server description for 10.131.137.188:27017 changed from 'unknown' to 'standalone'.
+MONGODB | There was a change in the members of the 'single' topology.
+MONGODB | 10.131.137.188:27017 | grupo_07.find | STARTED | {"find"=>"gutenberg", "filter"=>{"word"=>"todos"}, "limit"=>20, "sort"=>{"numero"=>1}}
+MONGODB | 10.131.137.188:27017 | grupo_07.saslStart | STARTED | {}
+MONGODB | 10.131.137.188:27017 | grupo_07.saslStart | SUCCEEDED | 0.005552196s
+MONGODB | 10.131.137.188:27017 | grupo_07.saslContinue | STARTED | {}
+MONGODB | 10.131.137.188:27017 | grupo_07.saslContinue | SUCCEEDED | 0.000914263s
+MONGODB | 10.131.137.188:27017 | grupo_07.saslContinue | STARTED | {}
+MONGODB | 10.131.137.188:27017 | grupo_07.saslContinue | SUCCEEDED | 0.0019888320000000003s
+MONGODB | 10.131.137.188:27017 | grupo_07.find | SUCCEEDED | 1.498757951s
+  Rendered busquedas/indice.html.erb within layouts/application (1510.5ms)
+Completed 200 OK in 1564ms (Views: 1533.9ms)
+
+
+Started POST "/" for 10.131.137.254 at 2017-05-02 18:28:36 -0400
+Cannot render console from 10.131.137.254! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BusquedasController#indice as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vecKj2fs1tdVXWWxMrAEa7DASe1d2KCULNyweOrxTfxPjL3jtUiy10sValOny5GgD17K2Bu7oK3iPY65k2MYJw==", "busque"=>"una", "commit"=>"Buscar"}
+  Rendering busquedas/indice.html.erb within layouts/application
+MONGODB | 10.131.137.188:27017 | grupo_07.find | STARTED | {"find"=>"gutenberg", "filter"=>{"word"=>"una"}, "limit"=>20, "sort"=>{"numero"=>1}}
+MONGODB | 10.131.137.188:27017 | grupo_07.find | SUCCEEDED | 1.541600503s
+  Rendered busquedas/indice.html.erb within layouts/application (1548.0ms)
+Completed 200 OK in 1577ms (Views: 1574.0ms)
+
+
