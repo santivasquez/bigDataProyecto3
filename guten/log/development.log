@@ -918,3 +918,56 @@ MONGODB | 10.131.137.188:27017 | grupo_07.find | SUCCEEDED | 1.541600503s
 Completed 200 OK in 1577ms (Views: 1574.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2017-05-03 06:45:33 -0500
+Processing by BusquedasController#indice as HTML
+  Rendering busquedas/indice.html.erb within layouts/application
+  Rendered busquedas/indice.html.erb within layouts/application (16.8ms)
+Completed 200 OK in 838ms (Views: 821.6ms)
+
+
+Started POST "/" for 127.0.0.1 at 2017-05-03 06:45:37 -0500
+Processing by BusquedasController#indice as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lQxvjrfkw54K1pEGspCk8AHFp1Gu8gz6kWGnLmz8SnBOkie5gALq6Zq+e3s3tlHI4h0HQsK7SVxV/ZIzelAn5g==", "busque"=>"hola", "commit"=>"Buscar"}
+  Rendering busquedas/indice.html.erb within layouts/application
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | Server 10.131.137.188:27017 initializing.
+MONGODB | execution expired
+MONGODB | execution expired
+  Rendered busquedas/indice.html.erb within layouts/application (26715.4ms)
+Completed   in 26745ms
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-03 06:51:26 -0500
+Processing by BusquedasController#indice as HTML
+  Rendering busquedas/indice.html.erb within layouts/application
+  Rendered busquedas/indice.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 457ms (Views: 447.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-03 06:53:17 -0500
+Processing by BusquedasController#indice as HTML
+  Rendering busquedas/indice.html.erb within layouts/application
+  Rendered busquedas/indice.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 39ms (Views: 37.5ms)
+
+
+Started POST "/" for 127.0.0.1 at 2017-05-03 06:53:23 -0500
+Processing by BusquedasController#indice as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"miEnWSKmxX04dITIuUU1ZCEA1jLG9ES2LuKndoztCE5Bv29uFUDsCqgcbrU8Y8Bcwth2Iaq9ARDqfpJrmkFl2A==", "busque"=>"", "commit"=>"Buscar"}
+  Rendering busquedas/indice.html.erb within layouts/application
+  Rendered busquedas/indice.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 66ms (Views: 63.6ms)
+
+
+Started POST "/" for 127.0.0.1 at 2017-05-03 06:53:26 -0500
+Processing by BusquedasController#indice as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Z3GuGEF8yAEadCpPHYcDD76JIPbHORaJdtWEO7eaedC87+YvdprhdoocwDKYofY3XVGA5atwUy+ySbEmoTYURg==", "busque"=>"a", "commit"=>"Buscar"}
+  Rendering busquedas/indice.html.erb within layouts/application
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | Server 10.131.137.188:27017 initializing.
+MONGODB | execution expired
+MONGODB | execution expired
+  Rendered busquedas/indice.html.erb within layouts/application (23498.0ms)
+Completed   in 23511ms
+
+

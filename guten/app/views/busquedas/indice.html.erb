@@ -6,6 +6,14 @@
 <% end %>
 
 
-<% @documentos.each do |documento| %>
-  <h3><%= documento.word %>		<%= documento.numero %>		 <%= documento.nameFile %><h3>
-<% end %>
+
+<table>
+    <% @documentos.each do |documento| %>
+    <tr>
+        <td><%= documento.word %></td>
+        <td><%= documento.numero %></td>
+        <td><%= documento.nameFile %></td>
+    </tr>
+    <% end %>
+</table>
+
