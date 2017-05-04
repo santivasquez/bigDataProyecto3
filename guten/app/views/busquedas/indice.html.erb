@@ -1,10 +1,13 @@
 <h1>Biblioteca Gutenberg</h1>
-<br>
+<div class ="ui secondary menu">
+    <div class="right menu">
+
 <%= form_tag("/", method: 'post') do %>
   <%= text_field_tag(:busque) %>
   <%= submit_tag("Buscar") %>
 <% end %>
-
+    </div>
+</div>
 
 
 <table class="ui fixed sigle line sortable celled table">
