@@ -1133,3 +1133,33 @@ MONGODB | 10.131.137.188:27017 | grupo_07.find | SUCCEEDED | 1.3617053520000002s
 Completed 200 OK in 1435ms (Views: 1433.1ms)
 
 
+Started GET "/" for 10.131.137.254 at 2017-05-03 23:06:37 -0400
+Cannot render console from 10.131.137.254! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BusquedasController#indice as HTML
+  Rendering busquedas/indice.html.erb within layouts/application
+  Rendered busquedas/indice.html.erb within layouts/application (15.5ms)
+Completed 200 OK in 16559ms (Views: 16523.6ms)
+
+
+Started POST "/" for 10.131.137.254 at 2017-05-03 23:07:08 -0400
+Cannot render console from 10.131.137.254! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BusquedasController#indice as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"d+vlKAv+N4YahqwsyIlES3bvgEP5TUR4tINuAaMUfVaRyFD5Bkn5MMhR79hwYpmLtbYGjFo85UeCqALJf1BO5g==", "busque"=>"s", "commit"=>"Buscar"}
+  Rendering busquedas/indice.html.erb within layouts/application
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | Server 10.131.137.188:27017 initializing.
+MONGODB | Topology type 'unknown' changed to type 'single'.
+MONGODB | Server description for 10.131.137.188:27017 changed from 'unknown' to 'standalone'.
+MONGODB | There was a change in the members of the 'single' topology.
+MONGODB | 10.131.137.188:27017 | grupo_07.find | STARTED | {"find"=>"gutenberg", "filter"=>{"word"=>"s"}, "limit"=>20, "sort"=>{"numero"=>1}}
+MONGODB | 10.131.137.188:27017 | grupo_07.saslStart | STARTED | {}
+MONGODB | 10.131.137.188:27017 | grupo_07.saslStart | SUCCEEDED | 0.00795099s
+MONGODB | 10.131.137.188:27017 | grupo_07.saslContinue | STARTED | {}
+MONGODB | 10.131.137.188:27017 | grupo_07.saslContinue | SUCCEEDED | 0.000925642s
+MONGODB | 10.131.137.188:27017 | grupo_07.saslContinue | STARTED | {}
+MONGODB | 10.131.137.188:27017 | grupo_07.saslContinue | SUCCEEDED | 0.001255294s
+MONGODB | 10.131.137.188:27017 | grupo_07.find | SUCCEEDED | 1.426976921s
+  Rendered busquedas/indice.html.erb within layouts/application (1439.6ms)
+Completed 200 OK in 1562ms (Views: 1543.8ms)
+
+
