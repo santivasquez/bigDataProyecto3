@@ -8,6 +8,14 @@
 
 
 <table>
+    <thead>
+        <tr>
+            <th>Palabra</th>
+            <th>cantidad</th>
+            <th>Nombre de archivo</th>
+        </tr>
+    </thead>
+    <tbody>
     <% @documentos.each do |documento| %>
     <tr>
         <td><%= documento.word %></td>
@@ -15,5 +23,6 @@
         <td><%= documento.nameFile %></td>
     </tr>
     <% end %>
+    </tbody>
 </table>
 
